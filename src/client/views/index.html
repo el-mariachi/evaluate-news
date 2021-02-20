@@ -14,18 +14,19 @@
 <body>
 
     <header>
-        <div class="">
+        <div class="logo">
             Logo
         </div>
         <div class="">
-            navigation
+            <a href="/">Home</a>
         </div>
     </header>
 
     <main>
         <section>
             <form class="" onsubmit="return Client.handleSubmit(event)">
-                <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
+                <label for="input">Please enter a URL of the news to be evaluated</label>
+                <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="URL">
                 <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
                     onsubmit="return Client.handleSubmit(event)">
             </form>
@@ -38,7 +39,7 @@
     </main>
 
     <footer>
-        <p>This is a footer</p>
+        <p>NLP News Analyser</p>
     </footer>
 
 </body>

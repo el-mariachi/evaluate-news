@@ -3,3 +3,10 @@ header {
     justify-content: space-between;
     padding: 10px 32px;
 }
+.logo {
+    color: transparent;
+    background: url(../images/tag.jpg) no-repeat center;
+    background-size: contain;
+    width: 96px;
+    height: 44px;
+}

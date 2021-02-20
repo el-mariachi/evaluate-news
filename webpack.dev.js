@@ -20,6 +20,10 @@ module.exports = {
                 loader: "babel-loader"
             },
             {
+                test: /\.(jpe?g|png|svg)$/i,
+                use: [{ loader: 'url-loader', options: { limit: 5000 } }]
+            },
+            {
                 test: /\.scss$/,
                 use: ['style-loader', 'css-loader', 'sass-loader', {
                     loader: 'sass-resources-loader',

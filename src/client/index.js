@@ -1,7 +1,7 @@
 import { checkForName } from './js/nameChecker'
 import { handleSubmit } from './js/formHandler'
 
-// import './styles/colors.scss';
+// import './styles/vars.scss';
 import './styles/resets.scss';
 import './styles/base.scss';
 import './styles/footer.scss';
