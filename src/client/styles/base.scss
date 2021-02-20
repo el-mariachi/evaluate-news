@@ -5,10 +5,11 @@ body {
 }
 
 main {
-    flex: 2;
+    flex: 1;
 }
 
 section {
     max-width: 800px;
     margin: 50px auto;
+    padding: 0 32px;
 }

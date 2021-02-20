@@ -1,12 +1,14 @@
 require('dotenv').config();
 var path = require('path');
 const express = require('express');
+const cors = require('cors');
 const mockAPIResponse = require('./mockAPI.js');
 
 const app = express();
 const PORT = 8081;
 
 app.use(express.static('dist'));
+app.use(cors());
 
 console.log(__dirname);
 
