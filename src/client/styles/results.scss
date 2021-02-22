@@ -1,0 +1,11 @@
+#results {
+    background-color: $resultsBack;
+    p {
+        background-color: $resultsBack;
+        padding: 8px;
+    }
+    p.error {
+        color: red;
+        font-weight: bold;
+    }
+}

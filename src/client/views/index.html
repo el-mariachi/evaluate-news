@@ -24,18 +24,17 @@
 
     <main>
         <section>
-            <form class="form form--input-url" onsubmit="return Client.handleSubmit(event)">
+            <form class="form form--input-url">
                 <label for="select">Please select type of input</label>
                 <select class="input" name="select" id="select">
                     <option value="0">URL</option>
                     <option value="1">Text</option>
                 </select>
-                <label class="url" for="input">Please enter a URL of the news to be evaluated</label>
-                <input class="url input" id="name" type="text" name="input" value="" placeholder="URL">
-                <label class="text" for="input">Please enter text to be evaluated</label>
-                <textarea class="text input" name="input" rows="10"></textarea>
-                <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
-                    onsubmit="return Client.handleSubmit(event)">
+                <label class="url" for="input_url">Please enter a URL of the news to be evaluated</label>
+                <input class="url input" id="name" type="text" name="input_url" value="" placeholder="URL">
+                <label class="text" for="input_text">Please enter text to be evaluated</label>
+                <textarea class="text input" name="input_text" rows="10"></textarea>
+                <input type="submit" name="" value="submit">
             </form>
         </section>
 
