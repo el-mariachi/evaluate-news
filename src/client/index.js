@@ -8,7 +8,25 @@ import './styles/footer.scss';
 import './styles/form.scss';
 import './styles/header.scss';
 
-console.log("CHANGE!!");
+/**
+ * Input type selector handler
+ */
+function handleSelect(event) {
+    const form = document.forms[0];
+    switch (this.selectedIndex) {
+        case 0:
+            form.classList.remove('form--input-text');
+            form.classList.add('form--input-url');
+            break;
+        case 1:
+            form.classList.add('form--input-text');
+            form.classList.remove('form--input-url');
+        default:
+            break;
+    }
+};
+
+document.getElementById('select').addEventListener('change', handleSelect);
 
 export {
     checkForName,
