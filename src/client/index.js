@@ -3,6 +3,8 @@ import { handleSelect } from './js/handleSelect';
 import { displayErrorMessage } from './js/displayErrorMessage';
 import { postToBackend } from './js/postToBackend';
 import { displayResults } from './js/displayResults';
+import { returnHTML } from './js/returnHTML';
+import { renderOutput } from './js/renderOutput';
 
 // import './styles/vars.scss';
 import './styles/resets.scss';
@@ -20,5 +22,7 @@ export {
     handleSelect,
     displayErrorMessage,
     postToBackend,
-    displayResults
+    displayResults,
+    returnHTML,
+    renderOutput
 };
