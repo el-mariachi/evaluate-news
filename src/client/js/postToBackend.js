@@ -1,6 +1,5 @@
 const postToBackend = (url = '', data = {}) => {
-    console.log(data);
-    const response = fetch(url, {
+    return fetch(url, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -8,10 +7,11 @@ const postToBackend = (url = '', data = {}) => {
         body: JSON.stringify(data)
     })
         .then(res => {
-            console.log(res);
+            return res.json();
         })
         .catch(err => {
-            Client.displayErrorMessage(`Server error: ${err}`);
+            console.error(err);
+            Client.displayErrorMessage(`Localhost server error: ${err}`);
         });
 };
 

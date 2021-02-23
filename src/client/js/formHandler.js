@@ -17,11 +17,17 @@ function handleSubmit(event) {
                 break;
             }
             // TODO send POST to backend
-            Client.postToBackend('http://localhost:8081/url', { url: result.input_url.trim() });
-            // TODO display results
+            Client.postToBackend('http://localhost:8081/url', { url: result.input_url.trim() })
+            .then(res => {
+                // display results
+                Client.displayResults(res);
+            })
+            .catch(err => {
+                Client.displayErrorMessage(err);
+            });
             break;
         case '1': // Text
-            // TODO validate input
+            // validate input
             const textRegex = /\w+/;
             const matchText = result.input_text.match(textRegex);
             if (!matchText) {
@@ -29,7 +35,14 @@ function handleSubmit(event) {
                 break;
             }
             // send POST to backend
-            // TODO display results
+            Client.postToBackend('http://localhost:8081/text', { text: result.input_text.trim() })
+            .then(res => {
+                // display results
+                Client.displayResults(res);
+            })
+            .catch(err => {
+                Client.displayErrorMessage(err);
+            });
             break;
         default:
             // display error
@@ -47,4 +60,3 @@ function handleSubmit(event) {
 }
 
 export { handleSubmit };
-// URL Regex

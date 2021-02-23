@@ -2,7 +2,7 @@ import { handleSubmit } from './js/formHandler';
 import { handleSelect } from './js/handleSelect';
 import { displayErrorMessage } from './js/displayErrorMessage';
 import { postToBackend } from './js/postToBackend';
-
+import { displayResults } from './js/displayResults';
 
 // import './styles/vars.scss';
 import './styles/resets.scss';
@@ -19,5 +19,6 @@ export {
     handleSubmit,
     handleSelect,
     displayErrorMessage,
-    postToBackend
+    postToBackend,
+    displayResults
 };
