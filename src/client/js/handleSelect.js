@@ -14,5 +14,4 @@ export function handleSelect() {
         default:
             break;
     }
-}
-;
+};

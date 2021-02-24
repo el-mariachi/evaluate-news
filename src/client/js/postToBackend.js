@@ -1,3 +1,7 @@
+/**
+ * Returns a function that returns a promise.
+ * No need to catch rejection inside this function.
+ */
 const postToBackend = (url = '', data = {}) => {
     return fetch(url, {
         method: 'POST',
@@ -8,10 +12,6 @@ const postToBackend = (url = '', data = {}) => {
     })
         .then(res => {
             return res.json();
-        })
-        .catch(err => {
-            console.error(err);
-            Client.displayErrorMessage(`Localhost server error: ${err}`);
         });
 };
 

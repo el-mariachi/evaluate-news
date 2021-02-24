@@ -1,6 +1,6 @@
 import { handleSubmit } from './js/formHandler';
 import { handleSelect } from './js/handleSelect';
-import { displayErrorMessage } from './js/displayErrorMessage';
+import { displayError } from './js/displayError';
 import { postToBackend } from './js/postToBackend';
 import { displayResults } from './js/displayResults';
 import { returnHTML } from './js/returnHTML';
@@ -20,7 +20,7 @@ document.forms[0].addEventListener('submit', handleSubmit);
 export {
     handleSubmit,
     handleSelect,
-    displayErrorMessage,
+    displayError,
     postToBackend,
     displayResults,
     returnHTML,
