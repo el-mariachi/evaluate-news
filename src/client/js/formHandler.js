@@ -23,7 +23,7 @@ function handleSubmit(event) {
                     Client.displayResults(res);
                 })
                 .catch(err => {
-                    Client.displayError(err);
+                    Client.displayError(`Backend problem. ${err}`);
                 });
             break;
         case '1': // Text
@@ -41,7 +41,7 @@ function handleSubmit(event) {
                     Client.displayResults(res);
                 })
                 .catch(err => {
-                    Client.displayError(err);
+                    Client.displayError(`Backend problem. ${err}`);
                 });
             break;
         default:
