@@ -5,7 +5,7 @@
   "scripts": {
     "test": "jest",
     "start": "node src/server/index.js",
-    "build": "rm -rf && webpack --config webpack.prod.js",
+    "build": "rm -rf dist && webpack --config webpack.prod.js",
     "dev": "webpack-dev-server  --config webpack.dev.js --open"
   },
   "keywords": [],
